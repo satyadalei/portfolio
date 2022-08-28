@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive-index.css" />
+    <style>
+      /* ---------------SCROLBAR STYLES----------------------------- */
+      html{
+        scrollbar-width: 0.8vw;
+        scrollbar-color: rgba(119, 119, 119, 0.452) rgba(85, 85, 85, 0.5);
+      }
+      html::-webkit-scrollbar {
+        width: 0.8vw;
+      }
+      html::-webkit-scrollbar-thumb {
+        background-color: rgba(119, 119, 119, 0.452);
+        border-radius: 10px;
+      }
+      html::-webkit-scrollbar-track {
+        background-color: rgba(85, 85, 85, 0.5);
+      }
+      html::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(119, 119, 119, 0.897);
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- -------------------HEADER----------------------- -->
+    <div id="header" class="header">
+      <div class="container">
+        <nav>
+          <h1>SATYA</h1>
+
+          <div id="hamburg_menubar" class="hamburg_menubar">
+            <div id="bar1" class="bar1 bar"></div>
+            <div id="bar2" class="bar2 bar"></div>
+            <div id="bar3" class="bar3 bar"></div>
+          </div>
+
+          <ul id="nav-list-itmes">
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="">About</a></li>
+            <li class="nav-item"><a href="">Services</a></li>
+            <li class="nav-item"><a href="">Portfolio</a></li>
+            <li class="nav-item"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- <div class="nav-border-line">Line</div> -->
+        <div class="header-text">
+          <p>Fullstack Developer</p>
+          <h1>
+            Hi, I am Satya <br />
+            Dalei from India.
+          </h1>
+          <div class="cta">
+            <a class="cta-hire-me">Hire Me</a>
+            <a class="cta-see-cv">My CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------ABOUT-------------------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/satya-about.jpg" alt="An image of Satyanarayan" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title" >About Me</h1>
+            <p>
+              Hello there I am Satyanarayan Dalei. I am a fullstack developer.
+              I use HTML, CSS, Javascript, Express.Js, Mongo DB for building 
+              a wonderfull looking website. In addition to that I use Bootstrap,
+              Tailwind CSS as front end frame work. I have over 1 year of experience
+              in this regard.
+            </p>
+            <div class="tab-titles">
+                <p id="skills-link" class="tab-links active-tab-link" onclick="openSkillsTab()" >Skills</p>
+                <p id="experience-link" class="tab-links" onclick="openExperienceTab()" >Experience</p>
+                <p id="education-link" class="tab-links" onclick="openEducationTab()" >Education</p>
+            </div>
+            <div class="tab-contents-container">
+              <!-- skills -->
+                <div id="skills" class="tab-contents tab-content-skills active-tab-content">
+                    <ul>
+                        <li> <span>Web Application Development</span> <br> 
+                             <span style="display:inline-block;margin-top:0.5rem; color: #f7588a;" > Both frontEnd and Backend</span> </li>
+                        <li> <span>Languages I use</span>  <br>
+                            <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">HTML, CSS , Javascript, Express.Js, MongoDB</span>
+                        </li>
+                        <li> <span>Frameworks</span>  <br>
+                          <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">Bootstrap, Tailwind CSS</span>
+                      </li>
+                    </ul>
+                </div>
+                <!-- experience -->
+                <div id="experience" class="tab-contents tab-content-experience">
+                  <ul>
+                      <li> <span>1 Year of Experience</span> <br>
+                        <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">@ MS Infosystems </span>
+                      </li>
+                      <li>  <span> Junior Web Developer and Designer</span> <br>
+                          <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;"> Tasked to update and maintain a job site </span>
+                      </li>
+                  </ul>
+                </div>
+                <!-- Education -->
+                <div id="education" class="tab-contents tab-content-education">
+                  <ul>
+                    <li>  <span>2020 Web Development Bootcamp</span> <br>
+                      <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;"> By Dr. Angella YU </span>
+                  </li>
+                    <li> <span>B.SC in Physics</span> <br>
+                      <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">MPC Autonomous College</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------SERVICES-------------------------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title" >Services</h1>
+        <div class="row">
+          <div class="service1">
+            <!-- <i class="fa-solid fa-pen-nib"></i> -->
+            <h2>Web Design</h2>
+            <p>
+              I can design the Ecommerce, portfolio, and other different websites.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="service2">
+            <!-- <i class="fa-solid fa-square-code"></i> -->
+            <h2>Web Development</h2>
+            <p>
+              I can build the Ecommerce, portfolio, and other different website designs.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------My portfolio ---------------------- -->
+   <div id="portfolio">
+    <div class="container">
+      <div class="row">
+        <h1 class="sub-title" >My Work</h1>
+        <div class="portfolio-item-list">
+          <div class="portfolio-item">
+             <img src="images/React (3).png" alt="Web design Project1">
+             <div class="portfolio-item-details">
+                <h3>Mobile App Design</h3>
+                <p>This is an awsome app that can help you track your money record</p>
+                <a href="">Know more</a>
+             </div>
+          </div>
+          <div class="portfolio-item">
+              <img src="images/React (2).png" alt="Web design Project1">
+              <div class="portfolio-item-details">
+                <h3>Mobile App Design</h3>
+                <p>This is an awsome app that can help you track your money record</p>
+                <a href="">Know more</a>
+             </div>
+          </div>
+          <div class="portfolio-item">
+             <img src="images/React (4).png" alt="Web design Project1">
+             <div class="portfolio-item-details">
+                <h3>Mobile App Design</h3>
+                <p>This is an awsome app that can help you track your money record</p>
+                <a href="">Know more</a>
+             </div>
+          </div>
+        </div>
+                 <a class="see-more" href="">See more</a>
+      </div>
+    </div>
+   </div>
+   <!-- ----------------------------CONTACT------------------------------ -->
+  <div id="contact">
+       <div class="container">
+        <div class="row">
+            <div class="contact-col-1">
+                <h1>Contact Me</h1>
+                <p>satyanarayandalei8@gmail.com</p>
+                <p>+91-8144573354</p>
+                <div class="contact-social-icons">
+                  <a href="">Twi</a>
+                  <a href="">Lin</a>
+                  <a href="">Git</a>
+                  <a href="">Ins</a>
+                </div>
+            </div>
+            <div class="contact-col-2">
+                 <form>
+                      <div class="contact-name">
+                          <label for="name">Your Name</label>
+                          <input type="text">
+                      </div>
+                      <div class="contact-mail">
+                        <label for="mail">Your Email</label>
+                        <input type="email">
+                     </div>
+                     <div class="contact-message">
+                      <!-- <label for="message">Your Message</label>
+                      <input type="text"> -->
+                      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                   </div>
+                 </form>
+            </div>
+          </div>
+        </div>
+       </div>
+  </div>
+  <!-- ------------------------------Footer---------------------- -->
+  <h1>hajhahjahsjasbhjajajkhkks</h1>
+  <h1>hajhahjahsjasbhjajajkhkks</h1>
+  <h1>hajhahjahsjasbhjajajkhkks</h1>
+  <h1>hajhahjahsjasbhjajajkhkks</h1>
+  <h1>hajhahjahsjasbhjajajkhkks</h1>
+    <script src="index.js"></script>
+  </body>
+</html>
