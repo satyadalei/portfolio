@@ -130,4 +130,23 @@
     #portfolio .row a.see-more{
         margin:0;
     }
+    /* ---------------------Contact------------------ */
+    #contact .row{
+        flex-direction: column;
+    }   
+    #contact .contact-col-1{
+        width: 100%;
+        min-height: 280px;
+    }
+    .contact-col-2 .form-input-box{
+        min-height: 3rem;
+        position: relative;
+    }
+    #contact .contact-col-2{
+        width: 100%; 
+        min-height: 250px;
+    }
+    .contact-col-2 .form-input-box textarea{
+        margin-bottom: 2rem;
+    }
 }
