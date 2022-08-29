@@ -83,6 +83,7 @@ body{
 .header .cta a{
     font-size: 1.5rem;
     margin-right: 1.5rem;
+    text-decoration: none;
      color: #ff0051d7;
      border: 1px solid #ff0051c4;
      border-radius: 0.4rem;
@@ -326,12 +327,21 @@ body{
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
+.contact-col-1 p > i{
+    margin-right: 10px;
+}
 .contact-col-1 div.contact-social-icons{
     margin-bottom: 2.5rem;
+    margin-top: 2rem;
 }
 .contact-col-1 div.contact-social-icons a{
     text-decoration: none;
     font-weight: bold;
+    font-size: 2rem;
+    margin: 10px 20px 10px 0; 
+}
+.contact-col-1 div.contact-social-icons a i:hover{
+    color: #ff004f;
 }
 .contact-col-1 div.resume-download a{
     text-decoration: none;
@@ -406,6 +416,5 @@ body{
 footer{
     width: 100%;
     min-height: 150px;
-    background-color: rgb(99, 0, 0);
-    
+    background-color: #8f012e;
 }

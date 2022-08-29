@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px){  /**width/
     /* -----------Header < 768px-------------------------- */
     .header{
         padding:0 8%;
@@ -66,21 +66,23 @@
         font-size: 1.2rem;
     }
 }
-@media screen and (max-height: 700px){ /* Height*/
+/* Height*/
+@media screen and (max-height: 700px){ 
     .header-text{
         top: 25%;
     }
     .header-text h1{
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 1rem;
     } 
 }
+/* Height*/
 @media screen and (max-height: 670px){
     .header-text{
         top: 23%;
     }
     .header-text h1{
-        font-size: 2.8rem;
+        font-size: 1.8rem;
         margin-bottom: 1rem;
     }  
     .header .cta a{
@@ -90,8 +92,9 @@
         font-size: 3rem;
     }
 }
+/**Width/
 /* --------------mobile version < 400px --------- */
-@media screen and (max-width:400px){
+@media screen and (max-width:400px){  /**Width/
     /* ---------------ABOUT---------------------- */
     #about .row{
         flex-direction: column;
