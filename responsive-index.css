@@ -5,8 +5,15 @@
         position: relative;
         overflow: hidden;
     }
-    .header nav h1{
-        font-size: 1.9rem;
+    .header nav h1.logo{
+        font-size: 1.5rem;
+    }
+    .header .hamburg_menubar .bar{
+        width: 3rem;
+        height: 0.35rem;
+        background-color: #ff004f;
+        margin: 5px 0 5px 0;
+        border-radius: 2rem;
     }
     .header nav{
        height: 10vh;
@@ -66,36 +73,34 @@
         font-size: 1.2rem;
     }
 }
-/* Height*/
-@media screen and (max-height: 700px){ 
-    .header-text{
-        top: 25%;
-    }
-    .header-text h1{
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    } 
-}
-/* Height*/
-@media screen and (max-height: 670px){
-    .header-text{
-        top: 23%;
-    }
-    .header-text h1{
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }  
-    .header .cta a{
-        font-size: 1rem;
-    }
-    #about .row .about-col-2 .sub-title{
-        font-size: 3rem;
-    }
-}
 /**Width/
 /* --------------mobile version < 400px --------- */
 @media screen and (max-width:400px){  /**Width/
     /* ---------------ABOUT---------------------- */
+    .header{
+        padding: 20px 5%;
+        width: 100%;
+    }
+    .header nav h1{
+        font-size : 1.3rem !important;;
+        color: white;
+    }
+    .header nav ul{
+        top: 14vh;
+    }
+    .header nav ul li{
+        margin: 1.5rem 0 1.5rem 0;
+    }
+    .header nav ul li a{
+        font-size: 1.2rem;
+    }
+    .header-text h1{
+        font-size: 2.5rem !important;
+        margin-bottom: 1rem;
+    }
+    .header-text p{
+        font-size: 1.2rem;
+    }
     #about .row{
         flex-direction: column;
     }
@@ -151,5 +156,31 @@
     }
     .contact-col-2 .form-input-box textarea{
         margin-bottom: 2rem;
+    }
+}
+/* Height*/
+@media screen and (max-height: 700px){ 
+    .header-text{
+        top: 25%;
+    }
+    .header-text h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    } 
+}
+/* Height*/
+@media screen and (max-height: 670px){
+    .header-text{
+        top: 23%;
+    }
+    .header-text h1{
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+    }  
+    .header .cta a{
+        font-size: 1rem;
+    }
+    #about .row .about-col-2 .sub-title{
+        font-size: 3rem;
     }
 }

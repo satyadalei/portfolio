@@ -24,7 +24,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.header nav h1{
+.header nav h1.logo{
     font-size:2rem;
     color: white;
 }
@@ -65,11 +65,13 @@ body{
 .header-text{
     position: absolute;
     z-index: 2;
-    top: 35%!important;
+    top: 35%;
 }
 .header-text p{
     margin-bottom: 1.3rem;
     font-size: 1.5rem;
+    color: #ff135e;
+    font-weight: bold;
 }
 .header-text h1{
     font-size: 4rem;
@@ -89,7 +91,7 @@ body{
      border-radius: 0.4rem;
      padding: 0.5rem;
      display: block;
-     width: 25%;
+     min-width: max-content;
      text-align: center;
      transition: 0.2s;
      cursor: pointer;
@@ -100,13 +102,12 @@ body{
 }
 .header .cta a.cta-hire-me:hover{
     background-color: #ff004f;
-    border: 1px solid #ff0051a8 ;
 }
 .header .cta a.cta-see-cv{
-    color: #fdfbfb;
+    background-color: #ff0051a8;
+    color: white;
 }
 .header .cta a.cta-see-cv:hover{
-    border: 1px solid #ff004f ;
     background-color: #ff004f;
 }
 /* --------------------------------------ABOUT--------------------------------- */
@@ -186,6 +187,7 @@ body{
 /* ------------------------------SERVICES----------------------- */
 #services{
     padding: 30px 5% 0 5%;
+    overflow: hidden;
 }
 .sub-title{
     font-size: 3rem;
@@ -199,7 +201,7 @@ body{
 #services .row div{
     width: 30%;
     min-height: 200px;
-    min-width: 300px;
+    min-width: 220px;
     margin: 1rem;
     border-radius: 10px;
     background-color: #50505046;
@@ -237,6 +239,7 @@ body{
 /* ------------------------------My work ----------------- */
 #portfolio{
     padding: 50px 5% 0 5%;
+    overflow: hidden;
 }
 #portfolio .sub-title{
     text-align: start;
@@ -258,8 +261,6 @@ body{
     position: relative;
     border-radius: 10px;
     margin-right: 1rem;
-    overflow: hidden;
-    /* flex-basis: 30%; */
 }
 #portfolio .portfolio-item-list div img{
     width: 100%;
@@ -313,6 +314,7 @@ body{
 /* --------------------------CONTACT----------------------- */
 #contact{
     padding:50px 10% 3rem 10%;
+    overflow: hidden;
 }
 .contact-col-1{
     min-height: 300px;
