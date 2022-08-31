@@ -316,12 +316,12 @@ body{
 }
 /* --------------------------CONTACT----------------------- */
 #contact{
-    padding:50px 10% 3rem 10%;
+    padding:50px 5% 3rem 5%;
     overflow: hidden;
 }
 .contact-col-1{
     min-height: 300px;
-    width: 40%;
+    width: 45%;
 }
 .contact-col-1 h1{
     margin-bottom: 1rem;
@@ -345,6 +345,9 @@ body{
     font-size: 2rem;
     margin: 10px 20px 10px 0; 
 }
+.contact-col-1 div.contact-social-icons a i{
+    transition: 0.3s ease-in-out;
+}
 .contact-col-1 div.contact-social-icons a i:hover{
     color: #ff004f;
 }
@@ -364,14 +367,16 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .contact-col-2 .form-input-box{
     min-height: 2.5rem;
     position: relative;
+    margin-bottom: 0.7rem;
 }
 .contact-col-2 .form-input-box input{
     height: 100%;
+    display: block;
     width: 100%;
     font-size: 1rem;
     border: none;

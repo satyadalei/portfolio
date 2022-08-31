@@ -72,15 +72,33 @@
     .header .cta a{
         font-size: 1.2rem;
     }
+    .contact-col-1 h1{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: #ff004f;
+    }
+    .contact-col-1 p{
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
 }
 /* width < 600px  */
 @media screen and (max-width:600px){
     #about .row .about-col-2 .tab-titles .tab-links{
         margin-right: 1rem;
     } 
+    .contact-col-1 h1{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: #ff004f;
+    }
+    .contact-col-1 p{
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+    }
 }
-/* width < 500px  */
-@media screen and (max-width:500px){
+/* width < 515px  */
+@media screen and (max-width:515px){
     #about .row{
         flex-direction: column;
         width: 100%;
@@ -95,6 +113,45 @@
     #about .row .about-col-2 .tab-titles{
         display: flex;
         justify-content: space-around;
+    }
+    .contact-col-1 p{
+        margin-bottom: 1rem;
+        font-size: 0.7rem;
+    }
+    .contact-col-1 div.contact-social-icons a{
+        font-size: 1.5rem;
+    }
+}
+/* Width */
+@media screen and (max-width:450px) {
+    #contact .row{
+        flex-direction: column;
+        align-items: center;
+    } 
+    #contact .contact-col-1{
+        width: 100%;
+        min-height: 240px;
+    }
+    .contact-col-1 p{
+        margin-bottom: 1rem;
+        font-size: 0.85rem;
+    }
+    .contact-col-1 div.contact-social-icons{
+        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+    }
+    #contact .contact-col-2{
+        width: 100%; 
+        min-height: 250px;
+    }
+    .contact-col-2 .form-input-box{
+        margin-bottom: 0.4rem; 
+    }
+    .contact-col-2 .form-input-box input{
+        min-height: 40px;
+    }
+    .contact-col-2 .form-input-box textarea{
+        margin-bottom: 1rem;
     }
 }
 /**Width/
@@ -167,24 +224,10 @@
     #portfolio .row a.see-more{
         margin:0;
     }
-    /* ---------------------Contact------------------ */
-    #contact .row{
-        flex-direction: column;
-    }   
-    #contact .contact-col-1{
-        width: 100%;
-        min-height: 280px;
-    }
+    /* ---------------------Contact------------------ */ 
     .contact-col-2 .form-input-box{
         min-height: 3rem;
         position: relative;
-    }
-    #contact .contact-col-2{
-        width: 100%; 
-        min-height: 250px;
-    }
-    .contact-col-2 .form-input-box textarea{
-        margin-bottom: 2rem;
     }
 }
 /* Height*/
