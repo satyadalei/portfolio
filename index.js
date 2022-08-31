@@ -1,8 +1,7 @@
 let navItems_ul = document.getElementById("nav-list-itmes");
 let hamburg = document.getElementById("hamburg_menubar");
 let navLinkItems = document.querySelectorAll(".nav-item") ;
-console.log(navLinkItems);
-console.log(typeof(Object.keys(navLinkItems)));
+
 function toogleNav(){
     navItems_ul.classList.toggle("nav_links_flip");
     hamburg.classList.toggle("cross-nav-burger");
