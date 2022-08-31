@@ -73,6 +73,30 @@
         font-size: 1.2rem;
     }
 }
+/* width < 600px  */
+@media screen and (max-width:600px){
+    #about .row .about-col-2 .tab-titles .tab-links{
+        margin-right: 1rem;
+    } 
+}
+/* width < 500px  */
+@media screen and (max-width:500px){
+    #about .row{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    #about .row .about-col-2{
+        width: 100%;
+    }   
+    #about .row .about-col-1{
+        width: 100%;
+    }
+    #about .row .about-col-2 .tab-titles{
+        display: flex;
+        justify-content: space-around;
+    }
+}
 /**Width/
 /* --------------mobile version < 400px --------- */
 @media screen and (max-width:400px){  /**Width/
@@ -101,31 +125,36 @@
     .header-text p{
         font-size: 1.2rem;
     }
-    #about .row{
-        flex-direction: column;
-    }
     #about .row .about-col-1{
-        overflow: hidden;
-        width: fit-content;
-    }
-    #about .row .about-col-2{
-        width: fit-content;
+        width: 100%;
     }
     .about-col-1 img{
         width: 100%;
         border-radius: 10px;
     }
     #about .row .about-col-2 .sub-title{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 1.5rem 0 0.5rem 0;
+        text-align: start;
+    }
+    #about .row .about-col-2 p{
+        font-size: 10px;
+        /* min-width: 200px; */
     }
     #about .row .about-col-2 .tab-titles{
         display: flex;
         margin: 1.5rem 0 0.5rem 0;
     }
+    #about .row .about-col-2 .tab-titles p.tab-links{
+        margin-right: 0;
+        font-size: 0.8rem;
+    }
     #about .row .about-col-2 .tab-contents-container{
         margin-top: 2rem;
         min-height: 200px;
+    }
+    #about .row .about-col-2 .tab-contents-container li span{
+        font-size: 0.8rem;
     }
     /* ------------------my Work(Portfolio)----------- */
     .portfolio-item-list{
@@ -179,8 +208,5 @@
     }  
     .header .cta a{
         font-size: 1rem;
-    }
-    #about .row .about-col-2 .sub-title{
-        font-size: 3rem;
     }
 }

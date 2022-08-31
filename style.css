@@ -126,14 +126,16 @@ body{
     height: 100%;
 }
 #about .row .about-col-1{
-    flex-basis: 35%;
+    /* flex-basis: 35%; */
+    width: 35%;
 }
 .about-col-1 img{
     width: 100%;
     border-radius: 10px;
 }
 #about .row .about-col-2{
-    flex-basis: 60%;
+    /* flex-basis: 60%; */
+    width: 60%;
 }
 #about .row .about-col-2 .sub-title{
     font-size: 3rem;
@@ -251,7 +253,7 @@ body{
 .portfolio-item-list{
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-around;
    flex-wrap: wrap;
 }
 #portfolio .portfolio-item-list div{
@@ -261,6 +263,7 @@ body{
     position: relative;
     border-radius: 10px;
     margin-right: 1rem;
+    margin-bottom: 1.5rem;
 }
 #portfolio .portfolio-item-list div img{
     width: 100%;
