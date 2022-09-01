@@ -45,3 +45,4 @@ function openEducationTab(){
     experienceLink.classList.remove("active-tab-link");
 }
 //openExperienceTab()
+document.getElementById("current-year").innerHTML = new Date().getFullYear() ;
