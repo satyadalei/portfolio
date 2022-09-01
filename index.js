@@ -45,22 +45,3 @@ function openEducationTab(){
     experienceLink.classList.remove("active-tab-link");
 }
 //openExperienceTab()
-document.getElementById("current-year").innerHTML = new Date().getFullYear() ;
-// to submit form data
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbw1y6aMEQPTL6slP2UdvN3wAmdyD5TM8uAmc-zb5o7B4nziRre6i-D9Sbu9tdpl60hyxQ/exec'
-  const form = document.forms['submit-to-google-sheet'];
-  const msg = document.getElementById("sending-msg") ;
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "<i class='fa-sharp fa-solid fa-circle-check'></i>Message sent successfully." ;
-        // <i class='fa-sharp fa-solid fa-circle-check'></i>
-        setTimeout(function(){
-            msg.innerHTML = "";
-        },5000);
-        form.reset() ;
-      })
-      .catch(error => console.error('Error!', error.message))
-  })

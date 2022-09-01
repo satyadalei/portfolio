@@ -311,6 +311,8 @@
     .header nav ul{
         flex-direction:row;
         justify-content: end;
+        align-items:start;
+        padding-top: 1.5rem;
         width: 95%;
         top: 25vh;
     }
