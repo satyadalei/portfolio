@@ -206,22 +206,23 @@
                 </div>
             </div>
             <div class="contact-col-2">
-                 <form>
+                 <form name="submit-to-google-sheet" >
                       <div class="form-input-box contact-name">
                           <label for="name" class="contact-label"></label>
-                          <input type="text" placeholder="Your name" >
+                          <input name="Name" type="text" placeholder="Your name" autocomplete="off" required>
                       </div>
                       <div class="form-input-box contact-mail">
                         <label for="mail" class="contact-label" ></label>
-                        <input type="email" placeholder="Your Email" >
+                        <input name="Email" type="email" placeholder="Your Email" autocomplete="off" required>
                      </div>
                      <div class="form-input-box contact-message">
-                          <textarea name="message" id="message"  placeholder="Your Message" ></textarea>
+                          <textarea  name="message" id="message"  placeholder="Your Message" autocomplete="off" required></textarea>
                      </div>
                      <div class=" contact-message">
                       <button type="submit">Submit</button>
                          <!-- <input type="submit" value="Submit"> -->
                      </div>
+                     <span id="sending-msg"></span>
                  </form>
             </div>
           </div>
