@@ -156,12 +156,12 @@
    <div id="portfolio">
     <div class="container">
       <div class="row">
-        <h1 class="sub-title" >My Work</h1>
+        <h1 class="sub-title" >My Projects</h1>
         <div class="portfolio-item-list">
           <div class="portfolio-item">
              <img src="images/Expence Tracker.png" alt="Web Development Project1">
              <div class="portfolio-item-details">
-                <h3>Expence Tracker Web App</h3>
+                <h3>Expence Tracker <br> Web App</h3>
                 <p>This web app helps you track your money expenditures</p>
                 <a href="https://mysterious-reef-46390.herokuapp.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
              </div>
@@ -224,6 +224,11 @@
                      </div>
                      <span id="sending-msg"></span>
                  </form>
+                 <!-- appears only when someone messages -->
+                 <div id="sending-msg-box" class="sending-msg">
+                     <div class="ring"></div>
+                     <span>sending...</span>
+                 </div>
             </div>
           </div>
         </div>
@@ -242,16 +247,19 @@
       const scriptURL = 'https://script.google.com/macros/s/AKfycbw1y6aMEQPTL6slP2UdvN3wAmdyD5TM8uAmc-zb5o7B4nziRre6i-D9Sbu9tdpl60hyxQ/exec'
       const form = document.forms['submit-to-google-sheet'];
       const msg = document.getElementById("sending-msg") ;
+      const sending_holdOn = document.getElementById("sending-msg-box");
 
       form.addEventListener('submit', e => {
+        sending_holdOn.style.display = "flex";
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => {
+            sending_holdOn.style.display = "none";
             msg.innerHTML = "<i class='fa-sharp fa-solid fa-circle-check'></i>Message sent successfully." ;
             // <i class='fa-sharp fa-solid fa-circle-check'></i>
             setTimeout(function(){
                 msg.innerHTML = "";
-            },6000);
+            },5000);
             form.reset() ;
           })
           .catch(error => console.error('Error!', error.message))

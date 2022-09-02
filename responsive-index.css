@@ -245,6 +245,9 @@
     #portfolio .row a.see-more{
         margin:0;
     }
+    #portfolio .portfolio-item-list div .portfolio-item-details h3{
+        font-size: 1.1rem;
+    }
     /* ---------------------Contact------------------ */ 
     .contact-col-2 .form-input-box{
         min-height: 3rem;
