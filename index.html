@@ -1,291 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio website</title>
-    <script src="https://kit.fontawesome.com/f0ec951726.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive-index.css" />
-    <style>
-      /* ---------------SCROLBAR STYLES----------------------------- */
-      html{
-        scroll-behavior: smooth;
-        scrollbar-width: 0.8vw;
-        scrollbar-color: rgba(119, 119, 119, 0.452) rgba(85, 85, 85, 0.5);
-      }
-      html::-webkit-scrollbar {
-        width: 0.8vw;
-      }
-      html::-webkit-scrollbar-thumb {
-        background-color: rgba(204, 202, 202, 0.897);
-        border-radius: 10px;
-      }
-      html::-webkit-scrollbar-track {
-        background-color: rgba(85, 85, 85, 0.5);
-      }
-      html::-webkit-scrollbar-thumb:hover {
-        background-color: rgb(119, 119, 119);
-        border-radius: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- -------------------HEADER----------------------- -->
-    <div id="header" class="header">
-      <div class="container">
-        <nav>
-          <h1 class="logo" >SATYA</h1>
 
-          <div id="hamburg_menubar" class="hamburg_menubar">
-            <div id="bar1" class="bar1 bar"></div>
-            <div id="bar2" class="bar2 bar"></div>
-            <div id="bar3" class="bar3 bar"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio website</title>
+  <script src="https://kit.fontawesome.com/f0ec951726.js" crossorigin="anonymous"></script>
+  <!-- boots-trap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive-index.css" />
+  <style>
+    /* ---------------SCROLBAR STYLES----------------------------- */
+    html {
+      scroll-behavior: smooth;
+      scrollbar-width: 0.8vw;
+      scrollbar-color: rgba(119, 119, 119, 0.452) rgba(85, 85, 85, 0.5);
+    }
+
+    html::-webkit-scrollbar {
+      width: 0.8vw;
+    }
+
+    html::-webkit-scrollbar-thumb {
+      background-color: rgba(204, 202, 202, 0.897);
+      border-radius: 10px;
+    }
+
+    html::-webkit-scrollbar-track {
+      background-color: rgba(85, 85, 85, 0.5);
+    }
+
+    html::-webkit-scrollbar-thumb:hover {
+      background-color: rgb(119, 119, 119);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- -------------------HEADER----------------------- -->
+  <div id="header" class="header">
+    <div class="container">
+      <nav>
+        <h1 class="logo">SATYA</h1>
+
+        <div id="hamburg_menubar" class="hamburg_menubar">
+          <div id="bar1" class="bar1 bar"></div>
+          <div id="bar2" class="bar2 bar"></div>
+          <div id="bar3" class="bar3 bar"></div>
+        </div>
+
+        <ul id="nav-list-itmes">
+          <li><a class="nav-item" href="#">Home</a></li>
+          <li><a class="nav-item" href="#about">About</a></li>
+          <li><a class="nav-item" href="#services">Services</a></li>
+          <li><a class="nav-item" href="#portfolio">Projects</a></li>
+          <li><a class="nav-item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- <div class="nav-border-line">Line</div> -->
+      <div class="header-text">
+        <p>Fullstack Developer</p>
+        <h1>
+          Hi, I am Satya <br />
+          Dalei from India.
+        </h1>
+        <div class="cta">
+          <a href="#contact" class="cta-hire-me">Hire Me</a>
+          <a href="contents/Satyanarayan_Resume_19th_may_2023.pdf" target="_blank" class="cta-see-cv">My CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----------------------------ABOUT-------------------------------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/satya-about.jpg" alt="An image of Satyanarayan" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Hello there I am Satyanarayan Dalei. I am a still learning and working on fullstack(MERN technologies) since
+            2020.
+            I am currently doing my Master's in Computer Application at Biju Patnaik University of Technology. Built 5+
+            useful MERN web applications. Love joining hackathons & work in a team.
+            I am excitted to learn from team members and contribute my skills and grow faster.
+          </p>
+          <div class="tab-titles">
+            <p id="skills-link" class="tab-links active-tab-link" onclick="openSkillsTab()">Skills</p>
+            <p id="experience-link" class="tab-links" onclick="openExperienceTab()">Experience</p>
+            <p id="education-link" class="tab-links" onclick="openEducationTab()">Education</p>
           </div>
-
-          <ul id="nav-list-itmes">
-            <li><a class="nav-item" href="#">Home</a></li>
-            <li><a class="nav-item" href="#about">About</a></li>
-            <li><a class="nav-item" href="#services">Services</a></li>
-            <li><a class="nav-item" href="#portfolio">Portfolio</a></li>
-            <li><a class="nav-item" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- <div class="nav-border-line">Line</div> -->
-        <div class="header-text">
-          <p>Fullstack Developer</p>
-          <h1>
-            Hi, I am Satya <br />
-            Dalei from India.
-          </h1>
-          <div class="cta">
-            <a href="#contact" class="cta-hire-me">Hire Me</a>
-            <a href="contents/Satyanarayan_Resume_19th_may_2023.pdf" target="_blank" class="cta-see-cv">My CV</a>
+          <div class="tab-contents-container">
+            <!-- skills -->
+            <div id="skills" class="tab-contents tab-content-skills active-tab-content">
+              <ul>
+                <li> <span>Web Application Development</span> <br>
+                  <span style="display:inline-block;margin-top:0.5rem; color: #f7588a;"> Both frontend and
+                    Backend</span>
+                </li>
+                <li> <span>Languages I use</span> <br>
+                  <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">HTML, CSS ,Javascript, Node.js,
+                    Express.Js, MongoDB, React.js, Firebase, C-Language</span>
+                </li>
+                <li> <span>Familiared with</span> <br>
+                  <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">
+                    Git, Github, User Authentication,
+                    Bootstrap,
+                    React MUI
+                  </span>
+                </li>
+                </li>
+                <li> <span>Currently Learning (2023 June) </span> <br>
+                  <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">
+                    Next.js, TypeScript, C++
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <!-- experience -->
+            <div id="experience" class="tab-contents tab-content-experience">
+              <ul>
+                <li> <span>1 Year of Experience</span> <br>
+                  <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">
+                    @ MS Infosystems (2021 June - 2022 June) </span>
+                </li>
+                <li> <span> Junior Web Developer and Designer</span> <br>
+                  <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;"> Tasked to update and maintain a
+                    job site </span>
+                </li>
+              </ul>
+            </div>
+            <!-- Education -->
+            <div id="education" class="tab-contents tab-content-education">
+              <ul>
+                <li> <span>Master In Computer Application</span> <br>
+                  <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">
+                    2022-24
+                  </span>
+                </li>
+                <li> <span>Web Development Bootcamp</span> <br>
+                  <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;"> By Dr. Angella YU </span>
+                </li>
+                <li> <span>B.SC in Physics</span> <br>
+                  <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">MPC Autonomous College</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- ----------------------------ABOUT-------------------------------------- -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/satya-about.jpg" alt="An image of Satyanarayan" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title" >About Me</h1>
-            <p>
-              Hello there I am Satyanarayan Dalei. I am a still learning and working on fullstack(MERN technologies) since 2020.
-              I am currently doing my Master's in Computer Application at Biju Patnaik University of Technology. Built 5+ useful MERN web applications. Love joining hackathons & work in a team.
-              I am excitted to learn from team members and contribute my skills and grow faster.
-            </p>
-            <div class="tab-titles">
-                <p id="skills-link" class="tab-links active-tab-link" onclick="openSkillsTab()" >Skills</p>
-                <p id="experience-link" class="tab-links" onclick="openExperienceTab()" >Experience</p>
-                <p id="education-link" class="tab-links" onclick="openEducationTab()" >Education</p>
-            </div>
-            <div class="tab-contents-container">
-              <!-- skills -->
-                <div id="skills" class="tab-contents tab-content-skills active-tab-content">
-                    <ul>
-                        <li> <span>Web Application Development</span> <br> 
-                             <span style="display:inline-block;margin-top:0.5rem; color: #f7588a;" > Both frontend and Backend</span> </li>
-                        <li> <span>Languages I use</span>  <br>
-                            <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">HTML, CSS ,Javascript, Node.js, Express.Js, MongoDB, React.js, Firebase, C-Language</span>
-                        </li>
-                        <li> <span>Familiared with</span>  <br>
-                          <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">
-                            Git, Github, User Authentication,
-                            Bootstrap, 
-                            React MUI
-                          </span>
-                      </li>
-                    </li>
-                    <li> <span>Currently Learning (2023 June) </span>  <br>
-                      <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">
-                        Next.js, TypeScript, C++
-                      </span>
-                  </li>
-                    </ul>
-                </div>
-                <!-- experience -->
-                <div id="experience" class="tab-contents tab-content-experience">
-                  <ul>
-                      <li> <span>1 Year of Experience</span> <br>
-                        <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">
-                          @ MS Infosystems (2021 June - 2022 June) </span>
-                      </li>
-                      <li>  <span> Junior Web Developer and Designer</span> <br>
-                          <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;"> Tasked to update and maintain a job site </span>
-                      </li>
-                  </ul>
-                </div>
-                <!-- Education -->
-                <div id="education" class="tab-contents tab-content-education">
-                    <ul>
-                      <li> <span>Master In Computer Application</span> <br>
-                        <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">
-                          2022-24
-                        </span>
-                      </li>
-                      <li>  <span>Web Development Bootcamp</span> <br>
-                        <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;"> By Dr. Angella YU </span>
-                    </li>
-                      <li> <span>B.SC in Physics</span> <br>
-                        <span style="display:inline-block;margin-top:0.5rem;color: #f7588a;">MPC Autonomous College</span>
-                      </li>
-                  </ul>
-                </div>
-            </div>
-          </div>
+  </div>
+  <!-- ----------------------------SERVICES-------------------------------------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">Open to work</h1>
+      <div class="row">
+        <div class="service1">
+          <!-- <i class="fa-solid fa-pen-nib"></i> -->
+          <h2>Web Development</h2>
+          <p>
+            Looking for startups or any medium size companies to work in the web development field. I have worked on
+            HTML5, CSS3, JavaScript, MongoDB, Express.js, React.js, and Node.js and look forward to contributing to
+            building better products with these technologies. Teams where I can learn and grow and thrive.
+          </p>
+          <!-- <a href="#">Learn more</a> -->
         </div>
-      </div>
-    </div>
-    <!-- ----------------------------SERVICES-------------------------------------- -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title" >Open to work</h1>
-        <div class="row">
-          <div class="service1">
-            <!-- <i class="fa-solid fa-pen-nib"></i> -->
-            <h2>Web Development</h2>
-            <p>
-              Looking for startups or any medium size companies to work in the web development field. I have worked on HTML5, CSS3, JavaScript, MongoDB, Express.js, React.js, and Node.js and look forward to contributing to building better products with these technologies. Teams where I can learn and grow and thrive.
-            </p>
-            <!-- <a href="#">Learn more</a> -->
-          </div>
-          <!-- <div class="service2">
+        <!-- <div class="service2">
             <h2>Web Development</h2>
             <p>
               I can build website designs.
             </p>
           </div> -->
-        </div>
       </div>
     </div>
-    <!-- -----------------------My portfolio ---------------------- -->
-   <div id="portfolio">
+  </div>
+  <!-- -----------------------My portfolio ---------------------- -->
+  <div id="portfolio">
     <div class="container">
       <div class="row">
-        <h1 class="sub-title" >My Projects</h1>
+        <h1 class="sub-title">My Projects</h1>
         <div class="portfolio-item-list">
-          <div class="portfolio-item">
-             <img src="images/Expence Tracker.png" alt="Web Development Project1">
-             <div class="portfolio-item-details">
-                <h3>Expence Tracker <br> Web App</h3>
-                <p>This web app helps you track your money expenditures</p>
-                <a href="https://money-expenditure-tracker.onrender.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-             </div>
+
+          <!-- Project item 1 -->
+          <div class="card" style="width: 18rem;">
+            <span class="badge bg-warning">
+              Full-Stack(MERN) Project
+            </span>
+            <img src="images/Expence Tracker.png" class="card-img-top" alt="Web Development Project1">
+            <div class="card-body">
+              <h5 class="card-title text-primary" style="font-weight: bolder;">
+                Expence Tracker Web App
+              </h5>
+              <p style="color: black;" class="card-text">
+                This web app helps tracking everyday money expenditures.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <span class="text-primary">Built On</span> : <kbd>HTML</kbd>
+                <kbd>CSS</kbd>
+                <kbd>JavaScript</kbd>
+                <kbd>Bootstrap</kbd>
+                <kbd>Node.js</kbd>
+                <kbd>Express.js</kbd>
+                <kbd>MongoDB</kbd>
+                <kbd>EJS</kbd>
+              </li>
+              <li class="list-group-item">
+                Completed : 23 August 2022
+              </li>
+            </ul>
+            <div class="card-body" style="padding-top: 0 !important;">
+              <span style="font-size: 12px;" class="text-danger">*Due to free hosting, may take time to load.</span>
+              <br>
+              <a target="_blank" href="https://money-expenditure-tracker.onrender.com/" class="btn btn-primary">
+                See Live <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a target="_blank" href="https://github.com/satyadalei/money-expenditure-tracker" class="btn btn-primary">
+                <i class="fab fa-github"></i> Github Repo
+              </a>
+            </div>
           </div>
-          <div class="portfolio-item">
-              <img src="images/interest-calculator.png" alt="Web design Project1">
-              <div class="portfolio-item-details">
-                <h3>Simple & Compound Interest Calculator <br> Web App</h3>
-                <p>This web app helps to calculate Simple and Compound Interest</p>
-                <a href="https://interest-calculator-yfnq.onrender.com/">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-             </div>
+
+
+          <!-- Project item 2 -->
+          <div class="card" style="width: 18rem; ">
+            <img src="images/interest-calculator.png" alt="Web design Project2" class="card-img-top"">
+            <div class="card-body">
+              <h5 class="card-title text-primary" style="font-weight: bolder;">
+                Simple & Compound Interest Calculator
+              </h5>
+              <p style="color: black;" class="card-text">
+                This web app helps to calculate Simple and Compound Interest.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <span class="text-primary">Built On</span> : <kbd>HTML</kbd>
+                <kbd>CSS</kbd>
+                <kbd>JavaScript</kbd>
+                <kbd>Node.js</kbd>
+                <kbd>Express.js</kbd>
+              </li>
+              <li class="list-group-item">
+                Completed : Jan 29, 2023
+              </li>
+            </ul>
+            <div class="card-body" style="padding-top: 0 !important;">
+              <span style="font-size: 12px;" class="text-danger">*Due to free hosting, may take time to load.</span>
+              <br>
+              <a target="_blank" href="https://interest-calculator-yfnq.onrender.com/" class="btn btn-primary">
+                See Live <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a target="_blank" href="https://github.com/satyadalei/interest-calculator" class="btn btn-primary">
+                <i class="fab fa-github"></i> Github Repo
+              </a>
+            </div>
           </div>
-          <div class="portfolio-item">
-             <img src="images/textutils_app_preview.png" alt="Web design Project1">
-             <div class="portfolio-item-details">
-                <h3>TextUtils App</h3>
-                <p>
-                  This app helps easily manipulate your texts. Capitalize, Lowercase, remove spaces etc.
-                </p>
-                <a href="https://satyadalei.github.io/textutils/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-             </div>
+
+          <!-- Project item 3 -->
+          <div class="card" style="width: 18rem;">
+            <span class="badge bg-warning">
+              React Project
+            </span>
+            <img src="images/textutils_app_preview.png" alt="Web design Project3" class="card-img-top"">
+            <div class="card-body">
+              <h5 class="card-title text-primary" style="font-weight: bolder;">
+                TextUtils App
+              </h5>
+              <p style="color: black;" class="card-text">
+                This app helps easily manipulate your texts. Capitalize, Lowercase, remove spaces etc.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <span class="text-primary">Built On</span> :  <kbd>HTML</kbd>
+                <kbd>CSS</kbd>
+                <kbd>JavaScript</kbd>
+                <kbd>Bootstrap</kbd>
+                <kbd>React.js</kbd>
+              </li>
+              <li class="list-group-item">
+                Completed : May 26, 2023
+              </li>
+            </ul>
+            <div class="card-body" style="padding-top: 0 !important;">
+              <span style="font-size: 12px;" class="text-danger">*Due to free hosting, may take time to load.</span>
+              <br>
+              <a target="_blank" href="https://satyadalei.github.io/textutils/" class="btn btn-primary">
+                See Live <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a target="_blank" href="https://github.com/satyadalei/textutils" class="btn btn-primary">
+                <i class="fab fa-github"></i> Github Repo
+              </a>
+            </div>
           </div>
+
+          <!-- Project item 4 -->
+          <div class="card" style="width: 18rem;">
+            <span class="badge bg-warning">Full-Stack Project</span>
+            <img src="images/digital_library.png" alt="Web design Project4" class="card-img-top"">
+            <div class="card-body">
+              <h5 class="card-title text-primary" style="font-weight: bolder;">
+                Digital Library
+              </h5>
+              <p style="color: black;" class="card-text">
+                This web app helps teacher to upload study content(img,pdfs) & students to view these study content.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <span class="text-primary">Built On</span> :  <kbd>HTML</kbd>
+                <kbd>CSS</kbd>
+                <kbd>JavaScript</kbd>
+                <kbd>Bootstrap</kbd>
+                <kbd>Node.js</kbd>
+                <kbd>Express.js</kbd>
+                <kbd>MongoDB</kbd>
+                <kbd>EJS</kbd>
+                <kbd>Firebase</kbd>
+              </li>
+              <li class="list-group-item">
+                Completed : May 25, 2023
+              </li>
+            </ul>
+            <div class="card-body" style="padding-top: 0 !important;">
+              <span style="font-size: 12px;" class="text-danger">*Due to free hosting, may take time to load.</span>
+              <br>
+              <a target="_blank" href="https://digital-library-0ktu.onrender.com/" class="btn btn-primary">
+                See Live <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a target="_blank" href="https://github.com/satyadalei/digital-library" class="btn btn-primary">
+                <i class="fab fa-github"></i> Github Repo
+              </a>
+            </div>
+          </div>
+
+
         </div>
-                 <!-- <a class="see-more" href="">See more</a> -->
+        <!-- <a class="see-more" href="">See more</a> -->
       </div>
     </div>
-   </div>
-   <!-- ----------------------------CONTACT------------------------------ -->
+  </div>
+  <!-- ----------------------------CONTACT------------------------------ -->
   <div id="contact">
-       <div class="container">
-        <div class="row">
-            <div class="contact-col-1">
-                <h1>Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>satyaprofessional99@gmail.com</p>
-                <!-- <p><i class="fa-brands fa-whatsapp"></i>+91-8658757670</p> -->
-                <div class="contact-social-icons">
-                  <a href="https://twitter.com/Satyana17786386"><i class="fa-brands fa-square-twitter"></i></a>
-                  <a href="https://www.linkedin.com/in/satyadalei"><i class="fa-brands fa-linkedin"></i></a>
-                  <a href="https://www.instagram.com/satyadalei_webdeveloper/"><i class="fa-brands fa-square-instagram"></i></a>
-                  <a href="https://github.com/satyadalei"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="resume-download">
-                  <!-- <a href="contents/Satyanarayan Dalei.pdf" download >Download CV</a> -->
-                  <a href="contents/Satyanarayan_Resume_19th_may_2023.pdf" download >Download CV</a>
-                </div>
-            </div>
-            <div style="display: none;"  class="contact-col-2">
-                 <form name="submit-to-google-sheet" >
-                      <div class="form-input-box contact-name">
-                          <label for="name" class="contact-label"></label>
-                          <input name="Name" type="text" placeholder="Your name" autocomplete="off" required>
-                      </div>
-                      <div class="form-input-box contact-mail">
-                        <label for="mail" class="contact-label" ></label>
-                        <input name="Email" type="email" placeholder="Your Email" autocomplete="off" required>
-                     </div>
-                     <div class="form-input-box contact-message">
-                          <textarea  name="message" id="message"  placeholder="Your Message" autocomplete="off" required></textarea>
-                     </div>
-                     <div class=" contact-message">
-                      <button type="submit">Submit</button>
-                         <!-- <input type="submit" value="Submit"> -->
-                     </div>
-                     <span id="sending-msg"></span>
-                 </form>
-                 <!-- appears only when someone messages -->
-                 <div id="sending-msg-box" class="sending-msg">
-                     <div class="ring"></div>
-                     <span>sending...</span>
-                 </div>
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="contact-col-1">
+          <h1>Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>satyaprofessional99@gmail.com</p>
+          <!-- <p><i class="fa-brands fa-whatsapp"></i>+91-8658757670</p> -->
+          <div class="contact-social-icons">
+            <a href="https://twitter.com/Satyana17786386"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/satyadalei"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/satyadalei_webdeveloper/"><i
+                class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://github.com/satyadalei"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <div class="resume-download">
+            <!-- <a href="contents/Satyanarayan Dalei.pdf" download >Download CV</a> -->
+            <a style="text-decoration: none;color: white;" href="contents/Satyanarayan_Resume_19th_may_2023.pdf"
+              download>Download CV</a>
           </div>
         </div>
-       </div>
+        <div style="display: none;" class="contact-col-2">
+          <form name="submit-to-google-sheet">
+            <div class="form-input-box contact-name">
+              <label for="name" class="contact-label"></label>
+              <input name="Name" type="text" placeholder="Your name" autocomplete="off" required>
+            </div>
+            <div class="form-input-box contact-mail">
+              <label for="mail" class="contact-label"></label>
+              <input name="Email" type="email" placeholder="Your Email" autocomplete="off" required>
+            </div>
+            <div class="form-input-box contact-message">
+              <textarea name="message" id="message" placeholder="Your Message" autocomplete="off" required></textarea>
+            </div>
+            <div class=" contact-message">
+              <button type="submit">Submit</button>
+              <!-- <input type="submit" value="Submit"> -->
+            </div>
+            <span id="sending-msg"></span>
+          </form>
+          <!-- appears only when someone messages -->
+          <div id="sending-msg-box" class="sending-msg">
+            <div class="ring"></div>
+            <span>sending...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   <!-- ------------------------------Footer---------------------- -->
-   <footer>
-          <p>
-            This website is developed by me.
-            <!-- <br> 
+  <footer>
+    <p>
+      This website is developed by me.
+      <!-- <br> 
             <span class="developer-name" >me.</span> -->
-            <br> 
-            <!-- Do Not Change ID below Do Not Change ID below Do Not Change ID below Do Not Change ID below-->
-             Copyright @Satyanarayan <span id="current-year"></span> 
-          </p>
-   </footer>
-   <script>
-    document.getElementById("current-year").innerHTML = new Date().getFullYear() ;
+      <br>
+      <!-- Do Not Change ID below Do Not Change ID below Do Not Change ID below Do Not Change ID below-->
+      Copyright @Satyanarayan <span id="current-year"></span>
+    </p>
+  </footer>
+  <script>
+    document.getElementById("current-year").innerHTML = new Date().getFullYear();
     // to submit form data
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbw1y6aMEQPTL6slP2UdvN3wAmdyD5TM8uAmc-zb5o7B4nziRre6i-D9Sbu9tdpl60hyxQ/exec'
-      const form = document.forms['submit-to-google-sheet'];
-      const msg = document.getElementById("sending-msg") ;
-      const sending_holdOn = document.getElementById("sending-msg-box");
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw1y6aMEQPTL6slP2UdvN3wAmdyD5TM8uAmc-zb5o7B4nziRre6i-D9Sbu9tdpl60hyxQ/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("sending-msg");
+    const sending_holdOn = document.getElementById("sending-msg-box");
 
-      form.addEventListener('submit', e => {
-        sending_holdOn.style.display = "flex";
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            sending_holdOn.style.display = "none";
-            msg.innerHTML = "<i class='fa-sharp fa-solid fa-circle-check'></i>Message sent successfully." ;
-            // <i class='fa-sharp fa-solid fa-circle-check'></i>
-            setTimeout(function(){
-                msg.innerHTML = "";
-            },5000);
-            form.reset() ;
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-   </script>
-    <script src="index.js"></script>
-  </body>
+    form.addEventListener('submit', e => {
+      sending_holdOn.style.display = "flex";
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          sending_holdOn.style.display = "none";
+          msg.innerHTML = "<i class='fa-sharp fa-solid fa-circle-check'></i>Message sent successfully.";
+          // <i class='fa-sharp fa-solid fa-circle-check'></i>
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

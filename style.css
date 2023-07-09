@@ -257,7 +257,13 @@ body{
    justify-content: space-around;
    flex-wrap: wrap;
 }
-#portfolio .portfolio-item-list div{
+#portfolio .portfolio-item-list .card .badge{
+    position: absolute;
+    top: 0;
+    left:0;
+    color: black;
+}
+#portfolio .portfolio-item-list div.portfolio-item{
     width: 30%;
     min-width: 200px;
     overflow: hidden;
@@ -266,12 +272,15 @@ body{
     margin-right: 1rem;
     margin-bottom: 1.5rem;
 }
-#portfolio .portfolio-item-list div img{
+#portfolio .portfolio-item-list div.card{
+    margin: 0.5rem 0.3rem 0.5rem 0.3rem;;
+}
+#portfolio .portfolio-item-list div.portfolio-item img{
     width: 100%;
     height: 100%;
     transition: 0.5s ease-in-out;
 }
-#portfolio .portfolio-item-list div .portfolio-item-details{
+#portfolio .portfolio-item-list div.portfolio-item .portfolio-item-details{
     width: 100%;
     height: 0;
     position: absolute;
@@ -306,10 +315,10 @@ body{
     background-color: white;padding: 5px;
     border-radius: 50%;
 }
-#portfolio .portfolio-item-list div:hover img{
+#portfolio .portfolio-item-list div.portfolio-item:hover img{
     transform: scale(1.1);
 }
-#portfolio .portfolio-item-list div:hover .portfolio-item-details{
+#portfolio .portfolio-item-list div.portfolio-item:hover .portfolio-item-details{
     height: 100% ;
 }
 #portfolio .row a.see-more{
