@@ -139,6 +139,13 @@
 }
 /* Width */
 @media screen and (max-width:450px) {
+    .top-social-media-bar{
+        flex-direction: column;
+    }
+    .top-social-media-bar .email{
+        font-size: 16px;
+        margin: 0 0 0.1rem 0 ;
+    }
     .sub-title{
         font-size: 2rem;
     }
@@ -180,7 +187,7 @@
 @media screen and (max-width:400px){  /**Width/
     /* ---------------ABOUT---------------------- */
     .header{
-        padding: 20px 5%;
+        padding: 10px 5%;
         width: 100%;
     }
     .header nav h1{

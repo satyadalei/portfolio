@@ -8,6 +8,28 @@
 body{
     background-color: rgb(0, 0, 0); 
 }
+/* ------------- TOP SOCIAL MEDIA ICONS BAR -------------------*/
+.top-social-media-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #1390f1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    min-height: 2.5rem;
+    /* border-bottom: 2px dashed #f81528; */
+}
+.top-social-media-bar .email{
+    font-size: 1rem;
+    font-family: sans-serif, monospace;
+    margin-right: 3rem;
+}
+.top-social-media-bar .contact-social-icons a{
+   margin-right: 0.5rem;
+}
 /* ------------------------HEADER--------------------------- */
 .header{
     padding: 20px 5%;
@@ -19,6 +41,7 @@ body{
     background-size: cover;
 }
 .header nav{
+    padding-top: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,6 +99,15 @@ body{
 .header .header-text h1{
     font-size: 4rem;
     margin-bottom: 1rem;
+}
+.header .header-text .achievement-stat{
+    color:#ff135e ;
+}
+.header .header-text .technologies p{
+    font-size: 1rem;
+}
+.header .header-text .technologies p i{
+    margin-bottom: 5px;
 }
 .header .cta{
     padding-top: 1rem;
