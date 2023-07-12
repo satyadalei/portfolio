@@ -295,7 +295,7 @@ body{
     left:0;
     color: black;
 }
-#portfolio .portfolio-item-list div.portfolio-item{
+/* #portfolio .portfolio-item-list div.portfolio-item{
     width: 30%;
     min-width: 200px;
     overflow: hidden;
@@ -303,9 +303,9 @@ body{
     border-radius: 10px;
     margin-right: 1rem;
     margin-bottom: 1.5rem;
-}
+} */
 #portfolio .portfolio-item-list div.card{
-    margin: 0.5rem 0.3rem 0.5rem 0.3rem;;
+    margin: 0.5rem 0.3rem 1.5rem 0.3rem;;
 }
 #portfolio .portfolio-item-list div.portfolio-item img{
     width: 100%;
