@@ -366,6 +366,44 @@ body{
    /* background-color: rgba(59, 59, 59, 0.253); */
    color: #ff004f;
 }
+/* ------------ Blogs section ----------- */
+#featured_blog_section{
+    width: 100%;
+    max-width: 1400px;
+    /* display: flex;
+    align-items: center; */
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid rgba(117, 117, 117, 0.594);
+}
+.blog_item_container{
+   width: 95%;
+   display: flex;
+   flex-wrap: wrap;
+}
+a.blog_item_link_holder{
+    display: block;
+    max-width: 250px;
+    text-decoration: none;
+    margin: 0.5rem;
+    border: 1px solid rgba(117, 117, 117, 0.594);
+    padding: 0.3rem;
+}
+.blog_img{
+    width: 100%;
+}
+.featured_blog{
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+}
+.blog_content_heading{
+    margin: 0.5rem;
+}
+.blog_content-description{
+    margin: 0.5rem;
+    font-style: italic;
+    color: rgba(128, 128, 128, 0.884);
+}
 /* --------------------------CONTACT----------------------- */
 #contact{
     padding:50px 5% 3rem 5%;
