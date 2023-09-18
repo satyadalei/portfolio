@@ -374,7 +374,6 @@ body{
     align-items: center; */
     justify-content: center;
     padding: 1rem;
-    border: 1px solid rgba(117, 117, 117, 0.594);
 }
 .blog_item_container{
    width: 95%;
